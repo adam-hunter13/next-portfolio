@@ -35,6 +35,7 @@ export default function ContactPage() {
         setError(true)
       }
     } catch (err) {
+      console.error(err)
       setError(true)
     }
   }
