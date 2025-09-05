@@ -13,7 +13,7 @@ const projects: Project[] = [
     title: 'Portfolio Website (Currently Viewing)',
     description: 'A personal site built with Next.js and Tailwind CSS to showcase my work and writing.',
     tags: ['Next.js', 'Tailwind CSS', 'TypeScript'],
-    live: 'https://www.adam-hunter.com/projects',
+    live: '/projects',
     github: 'https://github.com/adam-hunter13/next-portfolio',
     image: '',
     featured: true,
@@ -21,7 +21,7 @@ const projects: Project[] = [
   {
     title: 'BookShelf',
     description: 'Currently in development. Allow users to create an account and proceed to create Bookshelves containing books...',
-    tags: ['Next.js', 'MongoDB', 'Tailwind CSS'],
+    tags: ['Vite.js', 'Firebase'],
     github: 'https://github.com/adam-hunter13/bookshelf',
     image: 'bookshelf.png',
     featured: true,
