@@ -19,6 +19,9 @@ export default function ProjectsPage() {
           >
             {/* Top Half */}
             <div className="p-4 flex-1">
+              {project.inDevelopment && <span className="inline-block bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-semibold mb-2 w-max">
+                  In Development
+                </span>}
               <h2 className="text-lg font-semibold text-gray-900">{project.title}</h2>
               <p className="text-gray-600 text-sm mt-2">{project.description}</p>
             </div>

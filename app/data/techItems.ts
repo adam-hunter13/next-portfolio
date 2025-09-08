@@ -1,6 +1,7 @@
 const techItems: string[] = [
   "React", 
-  "Next.js", 
+  "Next.js",
+  "TypeScript",
   "Tailwind CSS", 
   "Vite", 
   "WordPress", 
