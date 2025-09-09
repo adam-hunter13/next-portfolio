@@ -55,7 +55,7 @@ const projects: Project[] = [
   {
     title: 'Weather Application',
     descriptionPreview: 'Weather application that takes the users geo location and displays their current weather...',
-    description: 'Weather application that takes the users geo location and displays their current weather. Look at the weather anywhere in the world.',
+    description: 'Weather application that takes the users geo location and displays their current weather.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Open Weather API'],
     github: 'https://github.com/adam-hunter13/weather-app',
     image: 'Weather-App.png',

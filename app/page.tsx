@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
@@ -20,6 +20,19 @@ export default function HomePage() {
     setShowModal(false);
     setTimeout(() => setSelectedProject(null), 300); // wait for fade-out
   };
+
+  //Remove scrolling ability when modal is open
+  useEffect(() => {
+  if (showModal) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
+
+  return () => {
+    document.body.classList.remove("overflow-hidden");
+  };
+}, [showModal]);
 
   return (
     <section className="space-y-16 max-w-3xl xl:max-w-7xl">
@@ -118,7 +131,7 @@ export default function HomePage() {
 
           {/* Modal Content */}
           <div
-            className={`relative bg-white rounded-xl p-6 max-w-lg w-full shadow-lg transform transition-all duration-300 ${
+            className={`relative bg-white rounded-xl p-6 max-w-lg w-5/6 md:w-full shadow-lg transform transition-all duration-300 ${
               showModal ? "scale-100 opacity-100" : "scale-95 opacity-0"
             }`}
           >
@@ -143,12 +156,12 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold mb-4">{selectedProject.title}</h3>
 
               {/* Full Description */}
-              <p className="text-gray-700 mb-4 whitespace-pre-wrap">{selectedProject.description}</p>
+              <p className="text-gray-700 whitespace-pre-wrap">{selectedProject.description}</p>
               
               
               {/* Image */}
               {selectedProject.image && (
-                <div className="w-48 h-48">
+                <div className="w-48 h-48 flex items-center">
                   <Image
                     src={
                       selectedProject.image.startsWith("/")
@@ -178,14 +191,14 @@ export default function HomePage() {
               )}
               
               {/* Links */}
-              <div className="flex gap-4 mb-4">
+              <div className="flex flex-col md:flex-row gap-4 mb-4">
                 {selectedProject.live && (
                   <Link
                     href={selectedProject.live}
                     target="_blank"
-                    className="text-blue-600 font-medium underline"
+                    className="text-blue-600 font-medium"
                   >
-                    Live
+                    <span className="flex flex-row gap-1 items-center">Live <ArrowRightIcon className="w-4 h-4" /></span>
                   </Link>
                 )}
                 {selectedProject.github && (
