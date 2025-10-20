@@ -2,12 +2,12 @@ import Carousel from "../../components/Carousel";
 import profileImages from "@/app/data/profileImages";
 import nationalParkSliderImages from "@/app/data/nationalParkSliderImages";
 import techItems from "@/app/data/techItems";
+import HorizontalScroller from "@/app/components/HorizontalScroller";
 
 export default function AboutPage() {
-
   return (
-    <section className="max-w-2xl space-y-6 text-gray-700">
-      <h1 className="text-4xl font-bold text-gray-900 tracking-tight">About Me</h1>
+    <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-gray-700 dark:text-gray-200">
+      <h1 className="text-4xl font-bold text-gray-900 dark:text-white tracking-tight">About Me</h1>
 
       {/* Profile + About text */}
       <div className="flex flex-col md:flex-row items-start gap-6">
@@ -36,17 +36,8 @@ export default function AboutPage() {
 
       {/* Tech list */}
       <div className="pt-4">
-        <h2 className="text-2xl font-semibold mb-2 text-gray-900">Tech I Enjoy Working With</h2>
-        <ul className="flex flex-wrap gap-2 text-sm">
-          {techItems.map((tech) => (
-            <li
-              key={tech}
-              className="rounded-full bg-blue-50 text-blue-700 px-3 py-1 border border-blue-100 hover:bg-blue-100 transition-colors duration-200"
-            >
-              {tech}
-            </li>
-          ))}
-        </ul>
+        <h2 className="text-2xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Tech I Enjoy Working With</h2>
+        <HorizontalScroller items={techItems} speed={50} />
       </div>
 
       {/* Scenic images */}
@@ -58,5 +49,5 @@ export default function AboutPage() {
         <Carousel slides={nationalParkSliderImages} showArrows showOverlay />
       </div>
     </section>
-  )
+  );
 }

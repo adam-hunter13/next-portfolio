@@ -3,24 +3,10 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { clsx } from 'clsx'
-import {
-  HomeIcon,
-  UserCircleIcon,
-  FolderIcon,
-  EnvelopeIcon,
-  XMarkIcon,
-  BriefcaseIcon,
-  AcademicCapIcon,
-} from '@heroicons/react/24/outline'
+import { XMarkIcon } from '@heroicons/react/24/outline'
+import { navItems } from '../data/navigation'
 
-const navItems = [
-  { name: 'Home', href: '/', icon: HomeIcon },
-  { name: 'About', href: '/about', icon: UserCircleIcon },
-  { name: 'Experience', href: '/experience', icon: BriefcaseIcon },
-  { name: 'Education', href: '/education', icon: AcademicCapIcon },
-  { name: 'Projects', href: '/projects', icon: FolderIcon },
-  { name: 'Contact', href: '/contact', icon: EnvelopeIcon },
-]
+
 
 type SidebarProps = {
   isOpen: boolean
@@ -43,7 +29,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
       {/* Sidebar container */}
       <aside
         className={clsx(
-          'fixed z-40 top-0 left-0 min-h-screen w-64 bg-white border-r border-gray-200 shadow-sm p-6 transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:block',
+          'fixed z-40 top-0 left-0 min-h-screen w-64 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 shadow-sm p-6 transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:block',
           isOpen ? 'translate-x-0' : '-translate-x-full'
         )}
       >
@@ -52,7 +38,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           <button
             onClick={onClose}
             aria-label="Close Sidebar"
-            className="text-gray-500 hover:text-gray-700"
+            className="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white"
           >
             <XMarkIcon className="w-6 h-6" />
           </button>
@@ -70,8 +56,8 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                 className={clsx(
                   'flex items-center gap-3 rounded-lg px-4 py-2 font-medium transition-colors duration-200',
                   isActive
-                    ? 'bg-indigo-100 text-blue-700'
-                    : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'
+                    ? 'bg-indigo-100 dark:bg-blue-600 text-blue-700 dark:text-white'
+                    : 'text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400'
                 )}
               >
                 <Icon className="h-5 w-5 shrink-0" />
