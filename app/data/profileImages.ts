@@ -5,6 +5,10 @@ type ProfileImage = {
 
 const profileImages: ProfileImage[] = [
   { 
+    image: "/Adam_Headshot_2.jpg", 
+    alt: "Image of Adam", 
+},
+  { 
     image: "/Adam.jpg", 
     alt: "Image of Adam", 
 },

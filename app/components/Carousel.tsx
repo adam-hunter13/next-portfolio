@@ -68,7 +68,7 @@ export default function Carousel({
 
             {/* Overlay */}
             {showOverlay && (slide.title || slide.location) && (
-              <div className="absolute top-0 sm:bottom-0 sm:top-auto left-0 w-full bg-black/40 text-white p-3 text-base md:text-lg font-medium flex justify-between rounded-b-xl">
+              <div className="absolute top-0 sm:bottom-0 sm:top-auto left-0 w-full bg-black/40 text-white p-3 text-base md:text-lg font-medium flex justify-between mb:rounded-b-xl">
                 <span>{slide.title}</span>
                 {slide.location && (
                   <span className="flex flex-row gap-2 items-center">
