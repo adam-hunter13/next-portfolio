@@ -23,6 +23,17 @@ const projects: Project[] = [
     inDevelopment: false,
   },
   {
+    title: 'F1 Standings',
+    descriptionPreview: 'A personal site built with Next.js and Tailwind CSS to display F1 statistics.',
+    description: 'A personal site built with Next.js and Tailwind CSS to display F1 statistics. This includes current standings for the drivers and constructors championships, current and previous race season history and I have also added a theme selector so the theme of the app can be the colors of your favorite f1 team.',
+    tags: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Jolpica API'],
+    live: 'https://f1-app-two.vercel.app/',
+    github: 'https://github.com/adam-hunter13/f1-app',
+    image: 'f1_app_preview.png',
+    featured: true,
+    inDevelopment: false,
+  },
+  {
     title: 'BookShelf',
     descriptionPreview: 'An application that allows the user to create an account and proceed to create Bookshelves where they can...',
     description: 'Allow users to create an account and proceed to create Bookshelves containing books. Each book they add to their bookshelf, requires the user to add the book title, book author, a short description and the users overall review.',
