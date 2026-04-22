@@ -38,6 +38,7 @@ const projects: Project[] = [
     descriptionPreview: 'A cozy social bookshelf app — track your reading, write reviews, and share recommendations with friends.',
     description: 'Shelfie is a full-stack social reading tracker built with Next.js, TypeScript, and Supabase. Users can build a personal bookshelf, write reviews, track reading progress, and connect with friends to share recommendations. Features include real-time reactions, push notifications, dark mode, an animated 3D bookshelf view, and a stats dashboard with yearly reading goals.',
     tags: ['Next.js, TypeScript, Supabase, Tailwind, PostgreSQL'],
+    live: 'https://shelfie-black.vercel.app/',
     github: 'https://github.com/adam-hunter13/shelfie',
     image: 'Shelfie_Screen_Shot.png',
     featured: true,
