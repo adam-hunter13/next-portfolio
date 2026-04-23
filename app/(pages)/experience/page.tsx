@@ -51,7 +51,7 @@ export default function ExperiencePage() {
           Download my resume to view a detailed overview of my projects, skills, and work history.
         </p>
         <a
-          href="/resume.pdf"
+          href="/Resume_2026.pdf"
           download
           className="flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition"
         >

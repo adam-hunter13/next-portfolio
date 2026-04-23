@@ -12,10 +12,10 @@ const experiences: ExperienceItem[] = [
     company: 'Amare Global',
     date: 'May 2025 – Present',
     description: [
-      "Developed, maintained, and optimized front-end content using modern CMS platforms like ContentStack.",
+      "Led the company's migration to ContentStack, importing and configuring all product content from the ground up to ensure a smooth platform transition.",
+      "Manage and maintain web content across global markets, supporting international regions as they onboard to the new platform.",
       "Applied SEO best practices to improve organic search performance and user engagement.",
       "Partnered with cross-functional teams (creative, IT, marketing) to implement technical updates and ensure brand consistency.",
-      "Enhanced user experience through iterative content revisions.",
     ],
     tools: [
       "ContentStack",

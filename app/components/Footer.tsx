@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="bg-white dark:bg-gray-900 text-black dark:text-gray-300 ">
     <div className="border-t border-gray-200 dark:border-gray-700"></div>
     <div className="max-w-2xl mx-auto py-4 space-y-6 text-center">
-        <p>© 2025 Adam Hunter. All rights reserved.</p>
+        <p>© 2026 Adam Hunter. All rights reserved.</p>
         <div className="flex justify-center gap-4">
             {socials.map((social, index) => (
             <Link
