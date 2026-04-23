@@ -34,6 +34,7 @@ const experiences: ExperienceItem[] = [
     company: 'Modere',
     date: 'July 2022 – April 2025',
     description: [
+      "Promoted to a front-end development role, designing and building an internal brand guide and design system documentation site using React and Next.js.",
       "Developed, maintained, and optimized front-end content using modern CMS platforms like ContentStack and PimCore.",
       "Applied SEO best practices to improve organic search performance and user engagement.",
       "Partnered with cross-functional teams (creative, IT, marketing) to implement technical updates and ensure brand consistency.",
@@ -72,32 +73,32 @@ const experiences: ExperienceItem[] = [
       "Excel",
     ]
   },
-  {
-    role: 'Billing and Collections Agent',
-    company: 'Vivint',
-    date: 'May 2017 – December 2017',
-    description: [
-      "Managed high-volume client communications.",
-      "Negotiated payment plans and resolved discrepancies.",
-    ],
-    tools: [
-      "Salesforce",
-      "Excel",
-    ]
-  },
-  {
-    role: 'Warehouse Worker',
-    company: 'ACH Fulfillment',
-    date: 'April 2015 – May 2017',
-    description: [
-      "Accurately picked, packed, and shipped customer orders, ensuring timely delivery and compliance with quality standards.",
-      "Coordinated inventory and logistics for large-scale global events, including preparation of bulk orders and specialized packaging.",
-      "Conducted inventory audits and restocked shelves to maintain order accuracy and warehouse organization.",
-    ],
-    tools: [
-      "Excel",
-    ]
-  },
+  // {
+  //   role: 'Billing and Collections Agent',
+  //   company: 'Vivint',
+  //   date: 'May 2017 – December 2017',
+  //   description: [
+  //     "Managed high-volume client communications.",
+  //     "Negotiated payment plans and resolved discrepancies.",
+  //   ],
+  //   tools: [
+  //     "Salesforce",
+  //     "Excel",
+  //   ]
+  // },
+  // {
+  //   role: 'Warehouse Worker',
+  //   company: 'ACH Fulfillment',
+  //   date: 'April 2015 – May 2017',
+  //   description: [
+  //     "Accurately picked, packed, and shipped customer orders, ensuring timely delivery and compliance with quality standards.",
+  //     "Coordinated inventory and logistics for large-scale global events, including preparation of bulk orders and specialized packaging.",
+  //     "Conducted inventory audits and restocked shelves to maintain order accuracy and warehouse organization.",
+  //   ],
+  //   tools: [
+  //     "Excel",
+  //   ]
+  // },
 ]
 
 export default experiences
